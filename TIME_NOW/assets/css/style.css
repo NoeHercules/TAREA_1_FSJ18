@@ -149,7 +149,7 @@ h3 {
     cursor: pointer;
 }
 
-/* Apartado de Relojes*/
+/* Apartado de Relojes pag index*/
 .relojes{ 
     background-color:  var(--azuloscuro2);
 }
@@ -169,8 +169,8 @@ h3 {
 
 .card{
     height: 350px;
-    width: 300px;
-    margin: 10px;
+    width: 100%;
+    margin-top: 120px;
     transition: 300ms;
 }
 
@@ -214,7 +214,6 @@ h3 {
     background-image: url(../img/reloj-dama-3.png);
 }
 
-
 .detalle_1, .detalle_2, .detalle_3, .detalle_4, .detalle_5, .detalle_6{
     height: 200px;
     width: 300px;
@@ -228,9 +227,6 @@ h3 {
     grid-template-rows: 1fr 1fr 1fr;
     transition: 300ms;
 }
-
-/* hover */
-
 .card:hover{
     transform: scale(1.1);
 }
@@ -245,8 +241,6 @@ h3 {
 .card:hover .reloj_1, .card:hover .reloj_2, .card:hover .reloj_3, .card:hover .reloj_4, .card:hover .reloj_5, .card:hover .reloj_6{
     background-image: radial-gradient(var(--blanco),var(--grisclaro));
 }
-
-/* texto y buttom */
 
 h2{
     display: flex;
@@ -348,10 +342,7 @@ h2{
     color: #000;
 }
 
-
-
-
-/* Apartado footer */
+/* Apartado footer para todas las pag*/
 
 .pie-pagina{
     width: 100%;
@@ -479,6 +470,23 @@ h2{
     background: var(--marron);
 }
 
+.h1_ubicacion{
+    margin-bottom: 25px;
+    color: var(--blanco);
+    text-align: center;
+}
+.ubicacion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.iframe_maps{
+    width: 95%;
+}
+
 /* Apartado de pag Nosotros*/
 
 .main_info{
@@ -488,7 +496,7 @@ h2{
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 5rem;
+    padding:  1rem 3rem;
     text-align: justify;
 }
 .container-info h2{
@@ -503,8 +511,87 @@ h2{
     color: var(--blanco);
 }
 
-/* Apartado de Productos*/
+.container__cards{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.card3{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.card3:hover{
+    transform: translateY(-10px);
+}
+
+.card3:hover .cover__card img{
+    transform: scale(1.1);
+}
+
+.cover__card{
+    width: 100%;
+    height: 100;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.card3 h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.card3 p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+.card3 hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background: #41414138;
+}
+
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+i{
+    margin-top: 25px;
+}
+
+/* Apartado de pagina Productos*/
 
 .Productos_container{ 
     background-color:  var(--azuloscuro2);
@@ -555,22 +642,22 @@ h2{
     filter: drop-shadow(5px -4px 10px #535353);
 }
 .imagen_reloj_7{
-    background-image: url(../img/reloj_1.png);
+    background-image: url(../img/reloj_4.png);
 }
 .imagen_reloj_8{
-    background-image: url(../img/reloj_1.png);
+    background-image: url(../img/reloj_5.png);
 }
 .imagen_reloj_9{
-    background-image: url(../img/reloj_1.png);
+    background-image: url(../img/reloj_6.png);
 }
 .imagen_reloj_10{
-    background-image: url(../img/reloj_1.png);
+    background-image: url(../img/reloj_7.png);
 }
 .imagen_reloj_11{
-    background-image: url(../img/reloj_1.png);
+    background-image: url(../img/reloj_8.png);
 }
 .imagen_reloj_12{
-    background-image: url(../img/reloj_1.png);
+    background-image: url(../img/reloj_9.png);
 }
 .imagen_reloj_13{
     background-image: url(../img/reloj-dama-4.png);
@@ -606,8 +693,6 @@ h2{
     transition: 300ms;
 }
 
-/* hover */
-
 .card2:hover{
     transform: scale(1.1);
 }
@@ -623,7 +708,22 @@ h2{
     background-image: radial-gradient(var(--blanco),var(--grisclaro));
 }
 
-/* texto y buttom */
+.h1_video{
+    margin-bottom: 25px;
+    color: var(--blanco);
+    text-align: center;
+}
+.video_1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.iframe_video{
+    width: 40%;
+}
 
 h2{
     display: flex;
@@ -658,11 +758,48 @@ h2{
     background-color: var(--azulclaro);
 }
 
-/* Apartado media Query*/
+
+/* Apartado media Queries para todas las paginas*/
 
 /* para celulares*/
 
 @media (max-width:576px){
+    /*header*/
+    .header_content h1 {
+        font-size: 35px;
+        line-height: 50px;
+        color: #f9fafc;
+        text-transform: uppercase;
+    }
+    
+    .header_content {
+        margin-top: 2rem;
+    }
+    .header_content .p_header {
+        font-size: 14px;
+        color: #fdfbfb;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    #logo-nav{
+        flex-direction: column;
+    }
+    .menu .navbar ul li a{
+        font-size: 12px;
+        color: #fffdfc;
+        display: block;
+        font-weight: 600;
+        padding: 18px;
+    }
+    #contacto{
+        font-size: 12px;
+        padding: 10px;
+        color: var(--azulclaro);
+        display: block;
+        font-weight: 600;
+    }
+    /*apartado relojes index*/
     .card{
         width: 100%;
         display: flex;
@@ -689,49 +826,14 @@ h2{
         font-size: 30px;
         margin-bottom: 00px;
     }
-
-    .header_content h1 {
-        font-size: 35px;
-        line-height: 50px;
-        color: #f9fafc;
-        text-transform: uppercase;
-        
-    }
-
-    .header_content {
-        margin-top: 2rem;
-    }
-    .header_content .p_header {
-        font-size: 14px;
-        color: #fdfbfb;
-        width: 100%;
-        text-align: justify;
-    }
-
+    /*footer*/
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
     }
-    #logo-nav{
-        flex-direction: column;
-    }
-    .menu .navbar ul li a{
-        font-size: 12px;
-        color: #fffdfc;
-        display: block;
-        font-weight: 600;
-        padding: 18px;
-    }
-    #contacto{
-        font-size: 12px;
-        padding: 10px;
-        color: var(--azulclaro);
-        display: block;
-        font-weight: 600;
-    }
-
+    /*contactanos*/
     .container-form {
         display: block;
         padding: 2rem;
@@ -742,38 +844,45 @@ h2{
     .p_contactanos{
         text-align: justify;
     }
+    /*productos*/
     .Productos_container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
     }
+    .iframe_video{
+        width: auto;
+    }
+    /*nosotros*/
     .container-info {
         padding: 2rem;
     }
 }
 /* para tablet */
+
 @media (max-width: 820px){
+
+    /*apartado reloj index*/
     .card {
         width: 100%;
         display: flex;
         justify-content: center;
-        height: 28rem;
     }
-    .pie-pagina .grupo-1 .red-social a{
-        margin: .5rem;
+    /*footer*/
+    .grupo-1{
+        width: 100%;
     }
+    /*contactanos*/
     .container-form {
         grid-template-columns: repeat(1,1fr);
     }
     .container-form form textarea {
         max-width: 660px;
     }
-    .grupo-1{
-        width: 100%;
-    }
-    .pie-pagina .grupo-1 .red-social a{
-        margin: 0rem;
+    /*productos*/
+    .iframe_video{
+        width: auto;
     }
 }
 
