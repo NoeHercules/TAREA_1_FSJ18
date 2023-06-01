@@ -163,8 +163,8 @@ h3 {
     margin: 100px auto;
     max-width: 960px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .card{
@@ -806,6 +806,7 @@ h2{
         justify-content: center;
         height: 30rem;
     }
+
     .card2{
         width: 100%;
         display: flex;
@@ -868,6 +869,9 @@ h2{
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .card_container{
+        flex-wrap: wrap;
     }
     /*footer*/
     .grupo-1{
