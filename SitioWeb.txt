@@ -1,0 +1,10 @@
+TAREA-SITIO WEB
+
+Noé Isaac Ramírez Hércules
+Grupo: FSJ18
+
+REPOSITORIO GITHUB
+https://github.com/NoeHercules/TAREA_1_FSJ18.git
+
+NETFILY
+https://timenow-noehercules.netlify.app/
